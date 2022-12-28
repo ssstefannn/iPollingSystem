@@ -13,9 +13,13 @@
 		A66C2AE8295CC74A00527C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66C2AE6295CC74A00527C05 /* Main.storyboard */; };
 		A66C2AEA295CC74B00527C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66C2AE9295CC74B00527C05 /* Assets.xcassets */; };
 		A66C2AED295CC74B00527C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66C2AEB295CC74B00527C05 /* LaunchScreen.storyboard */; };
+		A66C2AF5295CCDC100527C05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A66C2AF4295CCDC100527C05 /* GoogleService-Info.plist */; };
+		CDDA08ADEC8E8A59DCBF37BE /* Pods_iPollingSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A49E2A2BFCCAD0694DE262 /* Pods_iPollingSystem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66A49E2A2BFCCAD0694DE262 /* Pods_iPollingSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPollingSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6820B863A0F9A66370C53CEC /* Pods-iPollingSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPollingSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-iPollingSystem/Pods-iPollingSystem.release.xcconfig"; sourceTree = "<group>"; };
 		A66C2ADD295CC74A00527C05 /* iPollingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPollingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66C2AE0295CC74A00527C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66C2AE2295CC74A00527C05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		A66C2AE9295CC74B00527C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66C2AEC295CC74B00527C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A66C2AEE295CC74B00527C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66C2AF4295CCDC100527C05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2AD6CD7762E903B07A3021A /* Pods-iPollingSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPollingSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iPollingSystem/Pods-iPollingSystem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDA08ADEC8E8A59DCBF37BE /* Pods_iPollingSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		806B8278C16774DE6600B0DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66A49E2A2BFCCAD0694DE262 /* Pods_iPollingSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A66C2AD4295CC74A00527C05 = {
 			isa = PBXGroup;
 			children = (
 				A66C2ADF295CC74A00527C05 /* iPollingSystem */,
 				A66C2ADE295CC74A00527C05 /* Products */,
+				FCDD538DB8371A79C659F53F /* Pods */,
+				806B8278C16774DE6600B0DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,7 @@
 		A66C2ADF295CC74A00527C05 /* iPollingSystem */ = {
 			isa = PBXGroup;
 			children = (
+				A66C2AF4295CCDC100527C05 /* GoogleService-Info.plist */,
 				A66C2AE0295CC74A00527C05 /* AppDelegate.swift */,
 				A66C2AE2295CC74A00527C05 /* SceneDelegate.swift */,
 				A66C2AE4295CC74A00527C05 /* ViewController.swift */,
@@ -67,6 +85,15 @@
 			path = iPollingSystem;
 			sourceTree = "<group>";
 		};
+		FCDD538DB8371A79C659F53F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD6CD7762E903B07A3021A /* Pods-iPollingSystem.debug.xcconfig */,
+				6820B863A0F9A66370C53CEC /* Pods-iPollingSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A66C2AF1295CC74B00527C05 /* Build configuration list for PBXNativeTarget "iPollingSystem" */;
 			buildPhases = (
+				0620C91696D10D47DAE88922 /* [CP] Check Pods Manifest.lock */,
 				A66C2AD9295CC74A00527C05 /* Sources */,
 				A66C2ADA295CC74A00527C05 /* Frameworks */,
 				A66C2ADB295CC74A00527C05 /* Resources */,
+				7B2221BC390F02030CB46955 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,88 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66C2AED295CC74B00527C05 /* LaunchScreen.storyboard in Resources */,
+				A66C2AF5295CCDC100527C05 /* GoogleService-Info.plist in Resources */,
 				A66C2AEA295CC74B00527C05 /* Assets.xcassets in Resources */,
 				A66C2AE8295CC74A00527C05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0620C91696D10D47DAE88922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPollingSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B2221BC390F02030CB46955 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iPollingSystem/Pods-iPollingSystem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Libuv-gRPC/uv.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/uv.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iPollingSystem/Pods-iPollingSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A66C2AD9295CC74A00527C05 /* Sources */ = {
@@ -282,6 +387,7 @@
 		};
 		A66C2AF2295CC74B00527C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AD6CD7762E903B07A3021A /* Pods-iPollingSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +405,7 @@
 		};
 		A66C2AF3295CC74B00527C05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6820B863A0F9A66370C53CEC /* Pods-iPollingSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

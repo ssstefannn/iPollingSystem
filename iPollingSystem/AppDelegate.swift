@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
+        let database = Firebase.Database.database()
+        let ref = database.reference()
+        ref.child("test").setValue("Hello, World!")
+        ref.child("test").observeSingleEvent(of: .value) { (snapshot) in
+          let value = snapshot.value as? String
+          print(value) // prints "Hello, World!"
+        }
+
+
+
+
         return true
     }
 
